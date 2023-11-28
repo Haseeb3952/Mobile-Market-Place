@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!----------------------------------------- Custom CSS Link ---------------------------------------->
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!------------------------------------------ Box icons CDN ----------------------------------------->
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <!-------------- OWL -------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <title>Products Page</title>
+</head>
+
+<body>
+  <!-------------------------------------- Navbar Section Started ------------------------------------>
+  <section class="bg-dark">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="/assets/images/GizmoBarn.svg" class="img-fluid" alt="" />
+          </a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active px-4 text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4 text-white" aria-current="page" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4 text-white" aria-current="page" href="#">Compare</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4 text-white" aria-current="page" href="#">About Us</a>
+              </li>
+            </ul>
+            <div class="pb-lg-0 pb-3">
+              <a href="/Log_in-Social_Media.html" class="text-decoration-none">
+                <button type="button" class="btn btn-login text-white border border-white">
+                  Login
+                </button>
+              </a>
+              <a href="/Sign_Up-Social_Media.html" class="text-decoration-none">
+                <button type="button" class="btn btn-register border-white text-dark bg-white">
+                  Register
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!---------------------------------------- Navbar Section Ended ------------------------------------>
+
+  <!--------------------------------------- Filter Section Started ----------------------------------->
+
+  <section>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-12 col-lg-3">
+          <div class="filter-bg">
+            <p class="text-center py-3 m-0">Search Filters</p>
+          </div>
+          <div class="bg-white px-2 py-2">
+            <div
+              class="d-flex py-2 bg-white align-items-center justify-content-between px-3 filter-input border-2 rounded-3">
+              <div>
+                <div class="">
+                  <input type="email" class="form-control border-0 bg-transparent p-0" placeholder="Search by name"
+                    id="exampleInputEmail1" aria-describedby="emailHelp" />
+                </div>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="/assets/images/Search-icon-blue.svg" class="img-fluid" alt="" />
+                </a>
+              </div>
+            </div>
+            <p class="pt-2 pb-1 m-0">Location</p>
+            <div class="row">
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100" type="button"
+                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Province
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Punjab
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">KPK</button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Sindh
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100 text-start"
+                    type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    City
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Lahore
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Multan
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Islamabad
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class="pt-2 pb-1 m-0">Price (PKR)</p>
+            <div class="row">
+              <div class="col-6">
+                <div class="price-input">
+                  <input type="text" class="form-control border-0" placeholder="25,000" name="" id="" />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="price-input">
+                  <input type="text" class="form-control border-0 text-end" placeholder="70,000" name="" id="" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <input type="range" name="" id="" class="w-100 my-2" />
+              </div>
+              <div class="col-6">
+                <input type="range" name="" id="" class="w-100 my-2" />
+              </div>
+            </div>
+            <p class="pb-1 m-0">Brands & Model</p>
+            <div class="row">
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100" type="button"
+                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    iPhone
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Realme
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Vivo
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Infinix
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100 text-start"
+                    type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    X
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        SuperZoom
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Y7 Pro
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Note 8 Pro
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class="pb-1 pt-2 m-0">Others</p>
+            <div class="row">
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100" type="button"
+                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Condition
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        10/10
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        9/10
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        8/10
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100 text-start"
+                    type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Storage
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        256GB
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        128GB
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        64GB
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100" type="button"
+                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    RAM
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        12 GB
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        8 GB
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        4 GB
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100 text-start"
+                    type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Camera
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        108 MP
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        50 MP
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        48 MP
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100" type="button"
+                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Screen
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        6.8 Inches
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        6.6 Inches
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        6.0 Inches
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100 text-start"
+                    type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    OS
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">iOS</button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Android
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Window Phone
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100" type="button"
+                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Battery
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        6000 mAh
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        5000 mAh
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        4000 mAh
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="dropdown">
+                  <button class="btn btn-secondary bg-transparent text-dark dropdown-toggle w-100 text-start"
+                    type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Charging
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Type C
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Type B
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Type A
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---------------------------------------- Filter Section Ended ------------------------------>
+
+        <!----------------------------------------- Ads Section Started ------------------------------>
+
+        <div class="col-12 col-lg-9">
+          <div class="d-flex justify-content-between align-items-center mt-lg-2 mt-3">
+            <div>
+              <h2 class="fw-bold">Mobile Phones</h2>
+            </div>
+            <a href="#" class="text-decoration-none">
+              <div class="bg-results px-3 py-1 rounded-3 price-heading">
+                200 Results
+              </div>
+            </a>
+          </div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-decoration-none text-muted">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#" class="text-decoration-none text-muted">Mobiles</a>
+              </li>
+            </ol>
+          </nav>
+          <div class="bg-white ad-border pt-3 my-3">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item">
+                        <a href="#">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold category-listed" href="#" id="navbarDropdown"
+                          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          All Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </li>
+                        </ul>
+                      </li></a>
+                      </li>
+                      <div class="breadcrumb-line"></div>
+                      <li class="breadcrumb-item">
+                        <a href="#">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold category-listed" href="#" id="navbarDropdown"
+                          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Newly Listed
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </li>
+                        </ul>
+                      </li></a>
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="px-3 d-flex justify-content-end">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item list-grid" role="presentation">
+                      <button class="nav-link  active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <!-- <img src="/assets/images/list-view.svg" class="img-fluid" alt=""> -->
+                            <i class='bx bx-list-ul fs-4 pt-1'></i>
+                          </div>
+
+                          <div>
+                            <p class="m-0">List</p>
+                          </div>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item list-grid" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <!-- <img src="/assets/images/grid-view.svg" class="img-fluid" alt=""> -->
+                            <i class='bx bx-grid fs-4  pt-1'></i>
+                          </div>
+                          <div>
+                            <p class="m-0">Grid</p>
+                          </div>
+                        </div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!----------------------------------- Tab Content Started --------------------------------->
+
+          <div class="tab-content" id="pills-tabContent">
+            <!----------------------------------- List View Started --------------------------------->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="bg-white ad-banner my-2">
+                <div class="row p-2">
+                  <div class="col-5 col-md-4">
+                    <div class="list-products list-products w-100 mb-2">
+                      <a href="">
+                        <img src="https://cellularnews.com/wp-content/uploads/2023/07/what-mobile-phone-1689134757.jpg"
+                          class="img-fluid" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <div>
+                          <h5 class="pt-md-3 pt-0 fw-bold">iPhone X 64GB</h5>
+                          <div class="d-flex gap-2 align-items-center">
+                            <div>
+                              <img src="/assets/images/map-marker.svg" class="img-fluid" alt="" />
+                            </div>
+                            <div>
+                              <p class="text-muted m-0">Lahore, Pakistan</p>
+                            </div>
+                          </div>
+                          <h4 class="price-heading fw-bold pt-2">
+                            Rs. 115,000
+                          </h4>
+                          <div class="show-time-on-mobile">
+                            <p>32 minutes ago</p>
+                          </div>
+                          <a href="tel:+923367063952" class="text-decoration-none text-white list-view-time">
+                            <div
+                              class="bg-call text-center d-flex gap-2 py-2 rounded-3 justify-content-center px-4 mt-3">
+                              <div class="call-icon">
+                                <img src="/assets/images/call-icon.svg" class="img-fluid" alt="" />
+                              </div>
+                              <div>Call</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="mobile-view-heart">
+                        <img src="/assets/images/heart-icon.svg" class="img-fluid" alt="" />
+                      </div>
+                      <div>
+                        <div class="text-md-end text-start">
+                          <div class="list-view-time">
+                            <button class="border-0 ad-hours-ago rounded-3 px-3 fw-bold text-white">
+                              2 Hours
+                            </button>
+                          </div>
+                          <div class="mt-2 position-relative">
+                            <div class="position-absolute heart-icon">
+                              <a href="#" class="">
+                                <img src="/assets/images/heart-icon.svg" class="img-fluid" alt="" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white ad-banner my-2">
+                <div class="row p-2">
+                  <div class="col-5 col-md-4">
+                    <div class="list-products list-products w-100 mb-2">
+                      <a href="">
+                        <img src="https://cellularnews.com/wp-content/uploads/2023/07/what-mobile-phone-1689134757.jpg"
+                          class="img-fluid" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <div>
+                          <h5 class="pt-md-3 pt-0 fw-bold">iPhone X 64GB</h5>
+                          <div class="d-flex gap-2 align-items-center">
+                            <div>
+                              <img src="/assets/images/map-marker.svg" class="img-fluid" alt="" />
+                            </div>
+                            <div>
+                              <p class="text-muted m-0">Lahore, Pakistan</p>
+                            </div>
+                          </div>
+                          <h4 class="price-heading fw-bold pt-2">
+                            Rs. 115,000
+                          </h4>
+                          <div class="show-time-on-mobile">
+                            <p>32 minutes ago</p>
+                          </div>
+                          <a href="tel:+923367063952" class="text-decoration-none text-white list-view-time">
+                            <div
+                              class="bg-call text-center d-flex gap-2 py-2 rounded-3 justify-content-center px-4 mt-3">
+                              <div class="call-icon">
+                                <img src="/assets/images/call-icon.svg" class="img-fluid" alt="" />
+                              </div>
+                              <div>Call</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="mobile-view-heart">
+                        <img src="/assets/images/heart-icon.svg" class="img-fluid" alt="" />
+                      </div>
+                      <div>
+                        <div class="text-md-end text-start">
+                          <div class="list-view-time">
+                            <button class="border-0 ad-hours-ago rounded-3 px-3 fw-bold text-white">
+                              2 Hours
+                            </button>
+                          </div>
+                          <div class="mt-2 position-relative">
+                            <div class="position-absolute heart-icon">
+                              <a href="#" class="">
+                                <img src="/assets/images/heart-icon.svg" class="img-fluid" alt="" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!------------------------------------ List View Ended ---------------------------------->
+
+            <!----------------------------------- Grid View Started --------------------------------->
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="row gy-3">
+                <!----------------------------------- First Card ------------------------------------>
+                <div class="col-6 col-md-4">
+                  <div class="card">
+                    <a href="#">
+                      <div class="ad-picture grid-view-ad-picture p-md-3 p-2 text-center position-relative">
+                        <img src="/assets/images/Device-1.jpg" class="img-fluid" alt="..." />
+                        <div class="hours-ago rounded-3 position-absolute">
+                          <h6 class="m-0 px-2 py-1 text-white">2 Hours</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="px-3 pb-2">
+                      <h6 class="text-start fw-bold m-0">iPhone X 64GB</h6>
+                      <div class="d-flex align-items-center gap-2 py-1">
+                        <div class="map-marker">
+                          <img src="/assets/images/map-marker.svg" class="img-fluid" alt="" />
+                        </div>
+                        <div>
+                          <p class="text-muted m-0 small-text">
+                            Lahore, Punjab
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h6 class="fw-bold price-heading">Rs. 115,000</h6>
+                        </div>
+                        <div class="wish-icon">
+                          <a href="#">
+                            <img src="/assets/images/heart-icon.svg" class="img-fluid" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!----------------------------------- Second Card ------------------------------------>
+                <div class="col-6 col-md-4">
+                  <div class="card">
+                    <a href="#">
+                      <div class="ad-picture grid-view-ad-picture p-md-3 p-2 text-center position-relative">
+                        <img src="/assets/images/Device-1.jpg" class="img-fluid" alt="..." />
+                        <div class="hours-ago rounded-3 position-absolute">
+                          <h6 class="m-0 px-2 py-1 text-white">2 Hours</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="px-3 pb-2">
+                      <h6 class="text-start fw-bold m-0">iPhone X 64GB</h6>
+                      <div class="d-flex align-items-center gap-2 py-1">
+                        <div class="map-marker">
+                          <img src="/assets/images/map-marker.svg" class="img-fluid" alt="" />
+                        </div>
+                        <div>
+                          <p class="text-muted m-0 small-text">
+                            Lahore, Punjab
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h6 class="fw-bold price-heading">Rs. 115,000</h6>
+                        </div>
+                        <div class="wish-icon">
+                          <a href="#">
+                            <img src="/assets/images/heart-icon.svg" class="img-fluid" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!----------------------------------- Third Card ------------------------------------>
+                <div class="col-6 col-md-4">
+                  <div class="card">
+                    <a href="#">
+                      <div class="ad-picture grid-view-ad-picture p-md-3 p-2 text-center position-relative">
+                        <img src="/assets/images/Device-1.jpg" class="img-fluid" alt="..." />
+                        <div class="hours-ago rounded-3 position-absolute">
+                          <h6 class="m-0 px-2 py-1 text-white">2 Hours</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="px-3 pb-2">
+                      <h6 class="text-start fw-bold m-0">iPhone X 64GB</h6>
+                      <div class="d-flex align-items-center gap-2 py-1">
+                        <div class="map-marker">
+                          <img src="/assets/images/map-marker.svg" class="img-fluid" alt="" />
+                        </div>
+                        <div>
+                          <p class="text-muted m-0 small-text">
+                            Lahore, Punjab
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h6 class="fw-bold price-heading">Rs. 115,000</h6>
+                        </div>
+                        <div class="wish-icon">
+                          <a href="#">
+                            <img src="/assets/images/heart-icon.svg" class="img-fluid" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!----------------------------------- Forth Card ------------------------------------>
+                <div class="col-6 col-md-4">
+                  <div class="card">
+                    <a href="#">
+                      <div class="ad-picture grid-view-ad-picture p-md-3 p-2 text-center position-relative">
+                        <img src="/assets/images/Device-1.jpg" class="img-fluid" alt="..." />
+                        <div class="hours-ago rounded-3 position-absolute">
+                          <h6 class="m-0 px-2 py-1 text-white">2 Hours</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="px-3 pb-2">
+                      <h6 class="text-start fw-bold m-0">iPhone X 64GB</h6>
+                      <div class="d-flex align-items-center gap-2 py-1">
+                        <div class="map-marker">
+                          <img src="/assets/images/map-marker.svg" class="img-fluid" alt="" />
+                        </div>
+                        <div>
+                          <p class="text-muted m-0 small-text">
+                            Lahore, Punjab
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h6 class="fw-bold price-heading">Rs. 115,000</h6>
+                        </div>
+                        <div class="wish-icon">
+                          <a href="#">
+                            <img src="/assets/images/heart-icon.svg" class="img-fluid" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!----------------------------------- Fifth Card ------------------------------------>
+                <div class="col-6 col-md-4">
+                  <div class="card">
+                    <a href="#">
+                      <div class="ad-picture grid-view-ad-picture p-md-3 p-2 text-center position-relative">
+                        <img src="/assets/images/Device-1.jpg" class="img-fluid" alt="..." />
+                        <div class="hours-ago rounded-3 position-absolute">
+                          <h6 class="m-0 px-2 py-1 text-white">2 Hours</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="px-3 pb-2">
+                      <h6 class="text-start fw-bold m-0">iPhone X 64GB</h6>
+                      <div class="d-flex align-items-center gap-2 py-1">
+                        <div class="map-marker">
+                          <img src="/assets/images/map-marker.svg" class="img-fluid" alt="" />
+                        </div>
+                        <div>
+                          <p class="text-muted m-0 small-text">
+                            Lahore, Punjab
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h6 class="fw-bold price-heading">Rs. 115,000</h6>
+                        </div>
+                        <div class="wish-icon">
+                          <a href="#">
+                            <img src="/assets/images/heart-icon.svg" class="img-fluid" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!----------------------------------- Sixth Card ------------------------------------>
+                <div class="col-6 col-md-4">
+                  <div class="card">
+                    <a href="#">
+                      <div class="ad-picture grid-view-ad-picture p-md-3 p-2 text-center position-relative">
+                        <img src="/assets/images/Device-1.jpg" class="img-fluid" alt="..." />
+                        <div class="hours-ago rounded-3 position-absolute">
+                          <h6 class="m-0 px-2 py-1 text-white">2 Hours</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="px-3 pb-2">
+                      <h6 class="text-start fw-bold m-0">iPhone X 64GB</h6>
+                      <div class="d-flex align-items-center gap-2 py-1">
+                        <div class="map-marker">
+                          <img src="/assets/images/map-marker.svg" class="img-fluid" alt="" />
+                        </div>
+                        <div>
+                          <p class="text-muted m-0 small-text">
+                            Lahore, Punjab
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h6 class="fw-bold price-heading">Rs. 115,000</h6>
+                        </div>
+                        <div class="wish-icon">
+                          <a href="#">
+                            <img src="/assets/images/heart-icon.svg" class="img-fluid" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!------------------------------------ Grid View Ended ---------------------------------->
+          </div>
+
+          <!--------------------------------- Tab Content Ended ------------------------------------->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!----------------------------------------- Ads Section Ended -------------------------------------->
+
+  <!--------------------------------------- Footer Section Started ----------------------------------->
+
+  <section class="footer-section">
+    <div class="container">
+      <div class="row d-flex align-items-center gy-3">
+        <div class="col-12 col-lg-6">
+          <div class="footer-logo">
+            <a href="/">
+              <img src="/assets/images/GizmoBarn_footer_logo.svg" class="img-fluid" alt="Logo" />
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-9">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter your email" />
+        </div>
+        <div class="col-12 col-lg-2 col-md-3 text-end">
+          <button type="button" class="btn btn-subscribe bg-white text-dark px-5">
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <div class="row pt-4 pb-md-5 pb-3">
+        <div class="col-12 col-md-5">
+          <h5 class="text-white">Popular Categories</h5>
+          <ul class="p-0 list-unstyled">
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                Categories
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                Recent Ads
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                Shop By Price
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                Latest Phones
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                Latest Devices
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5 class="text-white">About Us</h5>
+          <ul class="p-0 list-unstyled">
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                Help
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                FAQs
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                Terms & Condition
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3 download_btn">
+          <div class="row align-items-center text-lg-end text-start">
+            <div class="col-lg-12 col-md-4 col-6">
+              <button class="btn bg-white w-75 rounded-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="app-store">
+                    <img src="/assets/images/apple-download.svg" class="img-fluid" alt="" />
+                  </div>
+                  <div>
+                    <p class="m-0">Get it on</p>
+                    <h6 class="text-start m-0">App Store</h6>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-12 col-md-4 col-6">
+              <div>
+                <button class="btn bg-white w-75 rounded-3 my-2">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="app-store">
+                      <img src="/assets/images/play-store-download.svg" class="img-fluid" alt="" />
+                    </div>
+                    <div>
+                      <p class="m-0 text-start">Get it on</p>
+                      <h6 class="text-start m-0">Google Play</h6>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-3">
+    <div class="container">
+      <div class="row d-flex align-items-center gy-3">
+        <div class="col-12 col-md-4 text-md-start text-center">
+          <a href="#" class="text-white text-decoration-none">
+            gizmobarn.com
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="social d-flex gap-2">
+              <div class="social-icons bg-white rounded-circle">
+                <a href="#" class="icon d-flex justify-content-between align-items-center">
+                  <img src="/assets/images/youtube-icon.svg" class="img-fluid" alt="" />
+                </a>
+              </div>
+              <div class="social-icons bg-white rounded-circle">
+                <a href="#" class="icon d-flex justify-content-between align-items-center">
+                  <img src="/assets/images/facebook-icon.svg" class="img-fluid" alt="" />
+                </a>
+              </div>
+              <div class="social-icons bg-white rounded-circle">
+                <a href="#" class="icon d-flex justify-content-between align-items-center">
+                  <img src="/assets/images/instagram-icon.svg" class="img-fluid" alt="" />
+                </a>
+              </div>
+              <div class="social-icons bg-white rounded-circle">
+                <a href="#" class="icon d-flex justify-content-between align-items-center">
+                  <img src="/assets/images/tiktok-icon.svg" class="img-fluid" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!---------------------------------------- Footer Section Ended ------------------------------------>
+
+  <!---------------- OWL -------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      stagePadding: 0,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        },
+
+        1000: {
+          items: 5,
+        },
+        1400: {
+          items: 3,
+        },
+      },
+    });
+  </script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

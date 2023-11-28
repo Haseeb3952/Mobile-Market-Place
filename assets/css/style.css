@@ -1,0 +1,696 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ebeff2 !important;
+}
+
+.navbar-brand img {
+  height: 45px;
+  width: 45px;
+}
+
+.btn-login {
+  padding: 7px 40px !important;
+}
+
+.btn-login:hover {
+  background-color: white;
+  color: black !important;
+}
+
+.btn-register {
+  padding: 7px 40px !important;
+}
+
+.btn-register:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.bg-sky {
+  background-color: #ebeff2;
+}
+
+.btn-sign-in {
+  background-color: #73a9f3;
+}
+
+.footer-section {
+  background-color: #495b73;
+  margin-top: 50px;
+}
+
+.footer-logo a img {
+  height: 70px;
+  width: 70px;
+}
+
+.btn-subscribe {
+  font-weight: 600 !important;
+}
+
+.app-store img {
+  height: 28px;
+  width: 28px;
+}
+
+footer {
+  background-color: #73a9f3;
+}
+
+.social-icons {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  height: 18px;
+  width: 18px;
+}
+
+.single_button {
+  width: 13em;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.email-input input::placeholder {
+  color: #d8d7d7 !important;
+}
+
+.bg-blue {
+  background-color: #73a9f3;
+}
+
+/* Home Page CSS */
+
+.carousel-item {
+  height: 550px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.vertical-line {
+  border-left: 1.5px solid #cbcbcb;
+  height: 30px;
+}
+
+.search-box {
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 50%;
+}
+
+.devices {
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 15px !important;
+}
+
+.ad-picture img {
+  height: 200px;
+  width: 320px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.grid-view-ad-picture img {
+  height: 130px;
+  width: 320px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.hours-ago {
+  background-color: #304773;
+  top: 13%;
+  right: 9%;
+}
+
+.ad-hours-ago {
+  background-color: #304773;
+  height: 30px;
+}
+
+.map-marker img {
+  height: 20px;
+  width: 20px;
+}
+
+.wish-icon img {
+  height: 20px;
+  width: 20px;
+}
+
+.price-heading {
+  color: #304773;
+}
+
+.btn-price {
+  background-color: #304773;
+  border-radius: 9px;
+}
+
+.bg-blue-dark {
+  background-color: #304773;
+}
+
+.banner {
+  background-image: url("/assets/images/banner.svg");
+  height: 550px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.brand-picture {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.brand-picture img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  /* object-fit: cover; */
+}
+
+/* .lastest-phone-section {
+  min-height: 500px;
+} */
+
+.phone-card {
+  border-radius: 10px;
+}
+
+.phone-picture {
+  height: 200px;
+}
+
+.phone-picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.devices-card {
+  border-radius: 10px;
+}
+
+.devices-picture {
+  height: 130px;
+}
+
+.devices-picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Producs Page CSS */
+
+.filter-bg {
+  background-color: #304773;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.filter-bg p {
+  color: #ebeff2;
+}
+
+.filter-input {
+  box-shadow: 0px 3px 5px 1px rgba(112, 126, 156, 0.75) inset;
+  -webkit-box-shadow: 0px 3px 5px 1px rgba(112, 126, 156, 0.75) inset;
+  -moz-box-shadow: 0px 3px 5px 1px rgba(112, 126, 156, 0.75) inset;
+}
+
+.price-input {
+  border-bottom: 1.5px solid #d8d7d7 !important;
+}
+
+.bg-results {
+  background-color: #b7c0cf;
+}
+
+.ad-banner {
+  border-radius: 10px;
+}
+
+.breadcrumb-line {
+  height: 40px;
+  width: 1px;
+  border: 1px solid #d8d7d7;
+  transform: rotate(30deg);
+}
+
+.phone-result-picture {
+  height: 180px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.phone-result-picture img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.list-products {
+  height: 180px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.list-products img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+ 
+
+.call-icon img {
+  height: 20px;
+  width: 20px;
+}
+
+.bg-call {
+  background-color: #73a9f3;
+  width: 100px;
+}
+
+.category-listed {
+  color: #73a9f3 !important;
+}
+
+/* Sell Your Products Page */
+
+.bg-information {
+  height: 50px;
+  width: 50px;
+  background-color: #ebeff2;
+  border-radius: 10px;
+}
+
+.bg-information img {
+  height: 30px;
+  width: 30px;
+}
+
+.post-ad {
+  border-radius: 8px;
+}
+
+.ad-content input::placeholder {
+  color: #d8d7d7;
+}
+
+.important-field label::after {
+  content: "*";
+  color: red;
+}
+
+.ad-content textarea::placeholder {
+  color: #d8d7d7;
+}
+
+.info-input input::placeholder {
+  color: #d8d7d7;
+}
+
+.upload-image {
+  border-radius: 10px;
+  background-color: #d8d7d7;
+}
+
+.upload-sub-images {
+  /* height: 150px;
+  width: 200px; */
+  border-radius: 10px;
+  background-color: #d8d7d7;
+}
+
+.competative-price {
+  border-radius: 7px;
+}
+/* .upload-sub-images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+
+.btn-text-blue {
+  color: #73a9f3;
+  border-radius: 7px;
+}
+
+.btn-bg-blue {
+  background-color: #73a9f3 !important;
+  border-radius: 7px;
+}
+
+.text-sky {
+  color: #73a9f3;
+}
+
+/* Product Details Page */
+
+.ad-border {
+  border-radius: 10px;
+}
+
+/* .ad-full-image {
+  height: 600px;
+  width: 800px;
+} */
+
+.ad-full-image img {
+  border-radius: 20px;
+  /* height: 100%;
+  width: 100%;
+  object-fit: cover; */
+}
+
+.my-ad img {
+  border-radius: 8px;
+  object-position: center;
+}
+
+.bg-light-dark {
+  background-color: #dce0e7;
+}
+.profile-picture {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-picture > img {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-pic {
+  height: 200px;
+  width: 200px;
+}
+
+.profile-pic img {
+  height: 100%;
+  width: 100%;
+}
+
+.search-by-name {
+  width: 35% !important;
+}
+
+.heart-icon {
+  top: 120px;
+  right: 0px;
+}
+
+/* Saved and my Ads Screen */
+
+.my-profile {
+  height: 150px;
+  width: 150px;
+}
+
+.profile-ads ul li button.active {
+  background-color: #73a9f3 !important;
+}
+
+.vertical-tabs button.active {
+  background-color: #73a9f3 !important;
+}
+
+/* Edit Profile Picture */
+
+.edit-profile-picture {
+  height: 150px;
+  width: 150px;
+}
+
+.edit-profile-input input {
+  background-color: #ebeff2;
+}
+
+.about-me-content textarea {
+  background-color: #ebeff2;
+}
+
+.connect-pic img {
+  height: 20px;
+  width: 20px;
+}
+
+.btn-connect {
+  border: 1.5px solid #73a9f3;
+}
+
+.bg-tabs {
+  background-color: #dce0e7;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.bg-tabs {
+  color: #898989 !important;
+  border: 1px solid white !important;
+}
+.bg-tabs.active {
+  background-color: #73a9f3 !important;
+  color: white !important;
+}
+
+.red-heart img {
+  height: 30px;
+  width: 30px;
+}
+
+.active-heart-icon {
+  top: 85px;
+  right: 0px;
+}
+
+#div1 {
+  order: 1;
+}
+
+#div2 {
+  order: 2;
+}
+
+/* Product Image Gallery */
+
+/******************************************** Latest Phones CSS ****************************************/
+
+.newly-listed {
+  box-shadow: none !important;
+}
+
+.network-heading {
+  padding-top: 3px;
+}
+
+.specification-hr hr {
+  background-color: #dce0e7;
+  /* background-color: red; */
+  width: 82.5%;
+  height: 1px !important;
+}
+
+.mobile-view-heart {
+  display: none;
+}
+
+.list-grid .active {
+  background-color: #304773 !important;
+}
+ 
+
+.show-time-on-mobile {
+  display: none;
+}
+
+
+/******************************************* Compare Phones CSS ****************************************/
+
+
+.compare-devices {
+  height: 250px;
+  width: 250px;
+}
+
+.td-border {
+  border-right: 1px solid #cbcbcb;
+}
+
+
+.comparison-line {
+  border-left: 1.5px solid #cbcbcb;
+  height: 30px;
+  padding-right: 10px;
+}
+
+.compare-devices img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .carousel-item {
+    height: 900px;
+  }
+  .ad-picture img {
+    height: 270px;
+    width: 380px;
+    border-radius: 14px;
+    object-fit: cover;
+  }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .hours-ago {
+    right: 15%;
+  }
+
+  .download_btn button {
+    width: 80% !important;
+  }
+  .upload-sub-images {
+    height: 130px;
+    width: 130px;
+  }
+
+  .search-box {
+    width: 65%;
+  }
+  .profile-pic {
+    height: 150px;
+    width: 150px;
+  }
+  .search-by-name {
+    width: 50% !important;
+  }
+  .specification-hr hr {
+    background-color: #dce0e7;
+    width: 73.5%;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .ad-picture img {
+    height: 200px;
+    width: 350px;
+  }
+
+  .download_btn button {
+    width: 100% !important;
+  }
+
+  .hours-ago {
+    right: 9%;
+  }
+
+  .search-box {
+    width: 85%;
+  }
+
+  .banner {
+    height: 350px;
+  }
+
+  .heart-icon {
+    top: 85px;
+    right: 0px;
+  }
+
+  .upload-sub-images {
+    height: 150px;
+    width: 160px;
+  }
+  .search-by-name {
+    width: 70% !important;
+  }
+  .active-heart-icon {
+    top: 55px;
+    right: 0px;
+  }
+  #div1 {
+    order: 2;
+  }
+
+  #div2 {
+    order: 1;
+  }
+  .specification-hr hr {
+    background-color: #dce0e7;
+    width: 64.5%;
+  }
+
+  .list-products {
+    height: 130px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .list-products img {
+    height: 100%;
+    width: 100%;
+  }
+  .list-view-time {
+    display: none;
+  }
+  .show-time-on-mobile {
+    display: block;
+  }
+  .mobile-view-heart {
+    height: 20px;
+    width: 20px;
+    display: block;
+  }
+  .grid-view-ad-picture img {
+    height: 100px;
+    width: 320px;
+  }
+  .small-text {
+    font-size: 15px;
+  }
+  .mobile-view-hidden {
+    display: none;
+  }
+  .font-size-small {
+    font-size: 13px;
+  }
+}
