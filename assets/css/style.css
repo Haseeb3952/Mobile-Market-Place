@@ -378,7 +378,7 @@ footer {
   color: #73a9f3;
 }
 
-/* Product Details Page */
+/************************************************* Product Details Page *******************************/
 
 .ad-border {
   border-radius: 10px;
@@ -436,7 +436,16 @@ footer {
   right: 0px;
 }
 
-/* Saved and my Ads Screen */
+.spec-icon img {
+  height: 15px;
+  width: 15px;
+}
+
+.spec-text {
+  font-size: 14.5px;
+}
+
+/*************************************** Saved and my Ads Screen ************************************/
 
 .my-profile {
   height: 150px;
@@ -451,7 +460,7 @@ footer {
   background-color: #73a9f3 !important;
 }
 
-/* Edit Profile Picture */
+/******************************************* Edit Profile Picture *************************************/
 
 .edit-profile-picture {
   height: 150px;
@@ -693,4 +702,13 @@ footer {
   .font-size-small {
     font-size: 13px;
   }
+  
+.spec-icon img {
+  height: 12px;
+  width: 12px;
+}
+
+.spec-text {
+  font-size: 9.5px;
+}
 }
